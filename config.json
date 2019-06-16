@@ -1,0 +1,11 @@
+{
+    "status": "online",
+    "activities": [
+        "over $guilds guilds",
+        "for $prefixhelp",
+        "over $users users",
+        "shard $shard/$shards"
+    ],
+    "activityType": "WATCHING",
+    "prefix": "!"
+}
