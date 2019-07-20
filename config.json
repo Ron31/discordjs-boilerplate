@@ -3,8 +3,7 @@
     "activities": [
         "over $guilds guilds",
         "for $prefixhelp",
-        "over $users users",
-        "shard $shard/$shards"
+        "over $users users"
     ],
     "activityType": "WATCHING",
     "prefix": "!"
