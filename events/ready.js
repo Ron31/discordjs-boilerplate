@@ -6,9 +6,8 @@ module.exports = async (client) => {
   client.user.setStatus(`${client.config.status}`);
   let activities = config.activities;
   setInterval(function() {
-    let shard = client.shard.id + 1;
     let activityRaw = activities[Math.floor(Math.random() * activities.length)];
-    let activity = activityRaw.replace("$prefix", config.prefix).replace("$guilds", numbers.data.numberWithCommas(client.guilds.size)).replace("$users", numbers.data.numberWithCommas(client.users.size)).replace("$shard", shardId.toString()).replace("$shards", client.shard.count.toString());
+    let activity = activityRaw.replace("$prefix", config.prefix).replace("$guilds", numbers.data.numberWithCommas(client.guilds.size)).replace("$users", numbers.data.numberWithCommas(client.users.size))
     client.user.setActivity(activity, {type: config.activityType});
   }, 5000);
 };
