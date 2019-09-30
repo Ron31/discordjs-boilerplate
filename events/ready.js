@@ -9,5 +9,5 @@ module.exports = async (client) => {
     let activityRaw = activities[Math.floor(Math.random() * activities.length)];
     let activity = activityRaw.replace("$prefix", config.prefix).replace("$guilds", numbers.data.numberWithCommas(client.guilds.size)).replace("$users", numbers.data.numberWithCommas(client.users.size))
     client.user.setActivity(activity, {type: config.activityType});
-  }, 5000);
+  }, 12000);
 };
